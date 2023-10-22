@@ -1,0 +1,14 @@
+import React from 'react'
+
+function QuizResult(props) {
+  return (
+    <div>
+    <div className='show-score'>
+        Your Score:{props.score}/{props.totalScore}
+    </div>
+    <button id="next-button" onClick={props.tryAgain}>Try Again</button>
+    </div>
+  )
+}
+
+export default QuizResult
